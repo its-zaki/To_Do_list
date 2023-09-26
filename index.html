@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo-App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Todo-App</h1>
-    <form onsubmit="todo(event)">
-        <input type="text" id="input" placeholder="Enter Your Task">
-        <input type="submit" id="submit" value="Submit" >
-    </form>
+    <h1 class="heading">Todo-App</h1>
+    <div class="form">
+        <form onsubmit="todo(event)">
+            <input class="user_input" type="text" id="input" placeholder="Enter Your Task">
+            <input class="submit-btn" type="submit" id="submit" value="Submit">
+        </form>
+    </div>
     <ul id="list"></ul>
 
     <script src="app.js "></script>
 </body>
+
 </html>
